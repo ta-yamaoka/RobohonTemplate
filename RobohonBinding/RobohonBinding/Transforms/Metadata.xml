@@ -1,0 +1,44 @@
+<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  
+  メソッドの戻り値をJava.Lang.Objectに変更する対応・・・解決しなった方法
+    <attr path="/api/package[@name='jp.co.sharp.android.rb.addressbook.AddressBookVariable']/
+        class[@name='AddressBookData']/
+        method[@name='describeContents']"
+      name="type">Java.Lang.Object</attr>
+
+    <attr path="/api/package[@name='jp.co.sharp.android.rb.addressbook.AddressBookVariable']/
+          class[@name='AddressBookData']/method[@name='writeToParcel'
+          and count(parameter)=2 
+          and parameter[1][@type='android.os.Parcel']/parameter[1]
+          and parameter[2][@type='Java.Lang.Integer']]/parameter[2]"
+      name="managedType">Java.Lang.Object</attr>
+  -->
+  
+  <add-node path="/api/package[@name='jp.co.sharp.android.rb.addressbook.AddressBookVariable']">
+    <class abstract="false" deprecated="not deprecated" final="false" name="AddressBookData" static="false" visibility="public" extends="java.lang.Object">
+      <method name="describeContents" visibility="public" static="false" final="false" deprecated="not deprecated" abstract="false" synchronized="false" return="int" native="false"> </method>
+    </class>
+  </add-node>
+  <add-node path="/api/package[@name='jp.co.sharp.android.rb.addressbook.AddressBookVariable']">
+    <class abstract="false" deprecated="not deprecated" final="false" name="OwnerProfileData" static="false" visibility="public" extends="java.lang.Object">
+      <method name="describeContents" visibility="public" static="false" final="false" deprecated="not deprecated" abstract="false" synchronized="false" return="int" native="false"> </method>
+    </class>
+  </add-node>
+  <add-node path="/api/package[@name='jp.co.sharp.android.rb.addressbook.AddressBookVariable']">
+    <class abstract="false" deprecated="not deprecated" final="false" name="RoboProfileData" static="false" visibility="public" extends="java.lang.Object">
+      <method name="describeContents" visibility="public" static="false" final="false" deprecated="not deprecated" abstract="false" synchronized="false" return="int" native="false"> </method>
+    </class>
+  </add-node>
+  
+<!--　消してしまう方法
+  <remove-node path="/api/package[@name='jp.co.sharp.android.rb.addressbook.AddressBookVariable']/class[@name='AddressBookData']" />
+  <remove-node path="/api/package[@name='jp.co.sharp.android.rb.addressbook.AddressBookVariable']/class[@name='OwnerProfileData']" />
+  <remove-node path="/api/package[@name='jp.co.sharp.android.rb.addressbook.AddressBookVariable']/class[@name='RoboProfileData']" />
+-->
+</metadata>

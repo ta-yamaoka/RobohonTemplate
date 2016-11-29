@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="jp.co.bspr.robohontemplate" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="21" />
+	<uses-permission android:name="android.permission.DEVICE_POWER" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="jp.co.sharp.android.permission.VOICEUI" />
+	<uses-permission android:name="jp.co.sharp.android.rb.projectormanager.permission.ACCESS_PROJECTOR" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+  <application android:allowBackup="true" android:icon="@drawable/Icon" android:label="RobohonTemplate" android:supportsRtl="true" android:theme="@style/AppTheme.NoActionBar.Fullscreen">
+		<uses-library android:name="jp.co.sharp.android.voiceui.framework" android:required="true" />
+		<uses-library android:name="jp.co.sharp.android.rb.projector.framework" android:required="true" />
+		<uses-library android:name="jp.co.sharp.android.rb.addressbook.framework" android:required="true" />
+	</application>
+</manifest>
