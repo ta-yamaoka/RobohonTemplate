@@ -1,12 +1,17 @@
-RoBoHoN‚ğXamarin.Android‚Å“®‚©‚·ƒR[ƒh
+RoBoHoNã‚’Xamarin.Androidã§å‹•ã‹ã™ã‚³ãƒ¼ãƒ‰
 
-## Ú×à–¾
-Xamarin(‚»‚Ì2) Advent Calendar 2016  
+ - RobohonBinding  
+ Java Binding Library Project
+ - RobohonTemplate  
+ Xamarin.Android Project
+
+## è©³ç´°èª¬æ˜
+Xamarin(ãã®2) Advent Calendar 2016  
 http://qiita.com/advent-calendar/2016/xamarin2  
-1“ú–Ú‚Ì‹L–  
+1æ—¥ç›®ã®è¨˜äº‹  
 
-## ’ˆÓ
-ƒƒ{ƒzƒ“SDK‚Í”²‚¢‚Ä‚ ‚è‚Ü‚·‚Ì‚ÅŠe©Œö®‚©‚çDL‚µ‚Ä‚­‚¾‚³‚¢  
+## æ³¨æ„
+ãƒ­ãƒœãƒ›ãƒ³SDKã¯æŠœã„ã¦ã‚ã‚Šã¾ã™ã®ã§å„è‡ªå…¬å¼ã‹ã‚‰DLã—ã¦ãã ã•ã„  
 jp.co.sharp.android.rb.addressbook.framework.jar  
 jp.co.sharp.android.rb.projector.framework.jar  
 jp.co.sharp.android.voiceui.framework.jar  
